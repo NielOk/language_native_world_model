@@ -113,11 +113,11 @@
   </div>
 
   <div class="tldr-box">
-    <p><strong>TL;DR:</strong> We introduce a theoretical framework for language-native world modeling that shifts the focus from next-token prediction to structured prediction over latent world states derived from natural language. Our architecture decouples semantic grounding, latent dynamics modeling, and goal verification—enabling agents to simulate and plan within structured latent spaces, not token streams. By extending Shannon entropy to trajectories of semantic states, we treat reasoning as predictive compression over evolving environments.</p>
+    <p><strong>TL;DR:</strong> We present a theoretical framework for <em>language-native world modeling</em> in which language models are used purely as <strong>semantic translators</strong>—mapping natural language descriptions into structured latent representations of world states. These latent states serve as the basis for simulation, planning, and reasoning, fully decoupled from token-level generation.</p>
 
-    <p>This framework allows large language models to act as semantic environment simulators—mapping natural language descriptions to internal latent worlds, simulating their evolution, and selecting goal-consistent futures. Unlike conventional prompting pipelines or grounded simulators, our system performs planning and reasoning directly in latent space, supporting modular and interpretable cognition from language alone.</p>
+    <p>Our architecture introduces a modular separation between (1) semantic grounding via language-to-latent translation, (2) latent dynamics modeling over projected environment states, and (3) goal verification over latent trajectories. This design enables agents to simulate hypothetical futures entirely within a compressed semantic space, treating reasoning as predictive compression over structured world-state evolution.</p>
 
-    <p><strong>To the best of our knowledge, this is the first architectural blueprint for building language-conditioned agents that reason and model environments through latent semantic simulation.</strong></p>
+    <p><strong>To our knowledge, this is the first architectural blueprint for building agents that simulate and plan within latent representations of environments structured from language—not by generating text, but by translating it into dynamic semantic models of the world.</strong></p>
   </div>
 
   <iframe 
