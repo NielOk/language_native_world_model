@@ -104,7 +104,7 @@
 
 <body>
   <div class="header">
-    <h1>A Blueprint for Language Native World Models</h1>
+    <h1>A Blueprint for Language-Native World Models</h1>
     <div class="authors">
       <a href="https://nielok.github.io" target="_blank">Niel Ok</a>
       <br />
@@ -113,11 +113,11 @@
   </div>
 
   <div class="tldr-box">
-    <p><strong>TL;DR:</strong> We present a theoretical framework for <em>language-native world modeling</em> in which language models are used purely as <strong>semantic translators</strong>—mapping natural language descriptions into structured latent representations of world states. These latent states serve as the basis for simulation, planning, and reasoning, fully decoupled from token-level generation.</p>
+    <p><strong>TL;DR:</strong> We propose a theoretical framework for <em>language-native world modeling</em> in which large language models are used as <strong>semantic encoders</strong> that map natural language descriptions of environments and goals into structured latent representations. These latents encode interpretable world states and evolve through a learned dynamics model, enabling simulation, planning, and reasoning entirely within latent space—without relying on token-level generation.</p>
 
-    <p>Our architecture introduces a modular separation between (1) semantic grounding via language-to-latent translation, (2) latent dynamics modeling over projected environment states, and (3) goal verification over latent trajectories. This design enables agents to simulate hypothetical futures entirely within a compressed semantic space, treating reasoning as predictive compression over structured world-state evolution.</p>
+    <p>Our architecture introduces a modular design with (1) a semantic encoder that grounds language in structured latent variables, (2) a history-aware latent dynamics model that simulates state transitions over time, and (3) a verifier that scores alignment between predicted trajectories and goal representations. We extend Shannon’s entropy minimization framework to structured semantic trajectories, treating reasoning as predictive compression over world-state evolution.</p>
 
-    <p><strong>To our knowledge, this is the first architectural blueprint for building agents that simulate and plan within latent representations of environments structured from language—not by generating text, but by translating it into dynamic semantic models of the world.</strong></p>
+    <p><strong>This work presents the first cohesive blueprint for agents that reason and plan by simulating structured meaning trajectories derived from language—recasting language models not as text generators, but as engines of latent semantic prediction.</strong></p>
   </div>
 
   <iframe 
